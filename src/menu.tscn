@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3 uid="uid://6j0tw3t27txe"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_f8qra"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+script = ExtResource("1_f8qra")
+
+[node name="Start" type="Button" parent="."]
+layout_mode = 2
+offset_left = 125.0
+offset_top = 250.0
+offset_right = 375.0
+offset_bottom = 340.0
+text = "Start"
+
+[node name="Levels" type="Button" parent="."]
+layout_mode = 2
+offset_left = 125.0
+offset_top = 400.0
+offset_right = 375.0
+offset_bottom = 490.0
+text = "Levels"
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 2
+offset_left = 125.0
+offset_top = 550.0
+offset_right = 375.0
+offset_bottom = 640.0
+size_flags_vertical = 0
+text = "Quit"
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 0
+offset_right = 9980.0
+offset_bottom = 3960.0
+scale = Vector2(0.05, 0.05)
+theme_override_font_sizes/font_size = 1000
+text = "Olympic Flame
+Run"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Levels" to="." method="_on_levels_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
