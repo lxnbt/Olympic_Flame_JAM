@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxn0w1t3se2n"]
+
+[ext_resource type="Script" path="res://menu_levels.gd" id="1_0y7e4"]
+
+[node name="Menu_levels" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0y7e4")
+
+[node name="1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 130.0
+offset_top = 200.0
+offset_right = 180.0
+offset_bottom = 250.0
+text = "1
+"
+
+[node name="2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 200.0
+offset_right = 280.0
+offset_bottom = 250.0
+text = "2"
+
+[node name="3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 330.0
+offset_top = 200.0
+offset_right = 380.0
+offset_bottom = 250.0
+text = "3"
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 0
+offset_right = 9980.0
+offset_bottom = 3960.0
+scale = Vector2(0.05, 0.05)
+theme_override_font_sizes/font_size = 1000
+text = "Levels :"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="1" to="." method="_on_1_pressed"]
+[connection signal="pressed" from="2" to="." method="_on_2_pressed"]
+[connection signal="pressed" from="3" to="." method="_on_3_pressed"]
