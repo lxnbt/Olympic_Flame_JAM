@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://btulqt1du2qtb"]
+
+[ext_resource type="Texture2D" uid="uid://dn51tgn3wfgwa" path="res://assets/trees_cut.png" id="1_8lqit"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5rtph"]
+size = Vector2(36.6667, 40.6667)
+
+[node name="Sprite2D" type="Sprite2D"]
+texture_filter = 1
+position = Vector2(-74.6667, 74)
+scale = Vector2(0.400578, 0.423544)
+texture = ExtResource("1_8lqit")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.832107, 0.786995)
+scale = Vector2(2.4964, 2.36103)
+shape = SubResource("RectangleShape2D_5rtph")
