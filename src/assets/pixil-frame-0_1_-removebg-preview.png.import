@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://uhmlmvo5tpdm"
-path="res://.godot/imported/Design_sans_titre-removebg-preview.png-d984daace55720481a42853d2af1142a.ctex"
+uid="uid://dyvuq7k4hnrm6"
+path="res://.godot/imported/pixil-frame-0_1_-removebg-preview.png-cac3b9ab82770c9c38a9b176a1319490.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Design_sans_titre-removebg-preview.png"
-dest_files=["res://.godot/imported/Design_sans_titre-removebg-preview.png-d984daace55720481a42853d2af1142a.ctex"]
+source_file="res://assets/pixil-frame-0_1_-removebg-preview.png"
+dest_files=["res://.godot/imported/pixil-frame-0_1_-removebg-preview.png-cac3b9ab82770c9c38a9b176a1319490.ctex"]
 
 [params]
 
