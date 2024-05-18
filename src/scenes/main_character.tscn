@@ -129,9 +129,8 @@ position = Vector2(56.1832, 153.877)
 rotation = -0.0491994
 scale = Vector2(11.0263, 12.6188)
 sprite_frames = SubResource("SpriteFrames_ymxkq")
-animation = &"fall"
-autoplay = "fall"
-frame_progress = 0.792479
+autoplay = "default"
+frame_progress = 0.493592
 offset = Vector2(21, 21)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
