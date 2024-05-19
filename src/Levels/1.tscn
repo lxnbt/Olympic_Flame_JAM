@@ -2814,7 +2814,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_me4h1")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_03irk"]
-size = Vector2(109, 940)
+size = Vector2(109, 952)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_khscs"]
 size = Vector2(56, 52.5)
@@ -2920,7 +2920,7 @@ layer_0/tile_data = PackedInt32Array(1507341, 393216, 17, 1572877, 393216, 18, 1
 position = Vector2(-43, 46)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(40, 275)
+position = Vector2(44, 313)
 shape = SubResource("RectangleShape2D_03irk")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
