@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [gd_scene load_steps=9 format=3 uid="uid://ev1ckungsxmr"]
 
 [ext_resource type="PackedScene" uid="uid://43px8l1gsqr6" path="res://scenes/main_character.tscn" id="1_be5si"]
@@ -2936,3 +2937,147 @@ volume_db = -20.0
 autoplay = true
 
 [connection signal="input_event" from="TextureRect/CharacterBody2D" to="TextureRect/CharacterBody2D" method="_process"]
+=======
+[gd_scene load_steps=5 format=3 uid="uid://dugbq1fj41bnt"]
+
+[ext_resource type="Texture2D" uid="uid://bnl1jaywef7af" path="res://assets/water_sprite.png" id="1_08ka3"]
+[ext_resource type="Texture2D" uid="uid://dcad4ejkmawkv" path="res://assets/wood-bridge-sprite.png" id="2_afccr"]
+[ext_resource type="PackedScene" uid="uid://43px8l1gsqr6" path="res://scenes/main_character.tscn" id="2_xsbh7"]
+[ext_resource type="PackedScene" path="res://fence_scene.tscn" id="4_nxsuo"]
+
+[node name="2" type="Node2D"]
+position = Vector2(-9, -1260)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -103.0
+offset_top = -160.0
+offset_right = 602.0
+offset_bottom = 2158.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+texture = ExtResource("1_08ka3")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0070922
+anchor_top = -0.900345
+anchor_right = 1.00709
+anchor_bottom = 0.0996549
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+texture = ExtResource("1_08ka3")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = -162.0
+offset_top = -87.0
+offset_right = 649.0
+offset_bottom = 2313.0
+texture = ExtResource("2_afccr")
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = -1
+anchor_left = 0.193588
+anchor_top = -0.717083
+anchor_right = 0.193588
+anchor_bottom = -0.717083
+offset_left = -161.0
+offset_top = -2147.0
+offset_right = 650.0
+offset_bottom = 253.0
+texture = ExtResource("2_afccr")
+metadata/_edit_use_anchors_ = true
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_xsbh7")]
+position = Vector2(15, 1238)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(244, 700)
+limit_left = -70
+limit_top = -3400
+limit_right = 550
+limit_bottom = 750
+position_smoothing_enabled = true
+position_smoothing_speed = 3.0
+drag_vertical_offset = -1.0
+drag_bottom_margin = 0.69
+
+[node name="Sprite2D10" parent="." instance=ExtResource("4_nxsuo")]
+position = Vector2(355, 734)
+scale = Vector2(0.266153, 0.248992)
+
+[node name="Sprite2D11" parent="." instance=ExtResource("4_nxsuo")]
+position = Vector2(136, 1487)
+scale = Vector2(0.266153, 0.248992)
+
+[node name="Sprite2D12" parent="." instance=ExtResource("4_nxsuo")]
+position = Vector2(300, 734)
+scale = Vector2(0.266153, 0.248992)
+
+[node name="Sprite2D13" parent="." instance=ExtResource("4_nxsuo")]
+position = Vector2(249, 734)
+scale = Vector2(0.266153, 0.248992)
+
+[node name="Sprite2D14" parent="." instance=ExtResource("4_nxsuo")]
+position = Vector2(422, 1485)
+scale = Vector2(0.266153, 0.248992)
+
+[node name="Sprite2D15" parent="." instance=ExtResource("4_nxsuo")]
+position = Vector2(372, 1485)
+scale = Vector2(0.266153, 0.248992)
+
+[node name="Sprite2D16" parent="." instance=ExtResource("4_nxsuo")]
+position = Vector2(323, 1485)
+scale = Vector2(0.266153, 0.248992)
+
+[node name="Sprite2D17" parent="." instance=ExtResource("4_nxsuo")]
+position = Vector2(185.938, 83.7501)
+scale = Vector2(0.266153, 0.248992)
+
+[node name="Sprite2D18" parent="." instance=ExtResource("4_nxsuo")]
+position = Vector2(130.938, 83.7501)
+scale = Vector2(0.266153, 0.248992)
+
+[node name="Sprite2D19" parent="." instance=ExtResource("4_nxsuo")]
+position = Vector2(79.9375, 83.7501)
+scale = Vector2(0.266153, 0.248992)
+
+[node name="Sprite2D20" parent="." instance=ExtResource("4_nxsuo")]
+position = Vector2(295.938, -391.25)
+scale = Vector2(0.266153, 0.248992)
+
+[node name="Sprite2D21" parent="." instance=ExtResource("4_nxsuo")]
+position = Vector2(240.937, -391.25)
+scale = Vector2(0.266153, 0.248992)
+
+[node name="Sprite2D22" parent="." instance=ExtResource("4_nxsuo")]
+position = Vector2(189.937, -391.25)
+scale = Vector2(0.266153, 0.248992)
+
+[node name="Sprite2D23" parent="." instance=ExtResource("4_nxsuo")]
+position = Vector2(403.938, -1207.25)
+scale = Vector2(0.266153, 0.248992)
+
+[node name="Sprite2D24" parent="." instance=ExtResource("4_nxsuo")]
+position = Vector2(348.937, -1207.25)
+scale = Vector2(0.266153, 0.248992)
+
+[node name="Sprite2D25" parent="." instance=ExtResource("4_nxsuo")]
+position = Vector2(297.937, -1207.25)
+scale = Vector2(0.266153, 0.248992)
+
+[connection signal="input_event" from="CharacterBody2D" to="CharacterBody2D" method="_process"]
+>>>>>>> f9a17b2bcfd968622085930fa773eb626614ed9c
