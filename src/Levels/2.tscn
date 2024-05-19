@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [gd_scene load_steps=9 format=3 uid="uid://ev1ckungsxmr"]
 
 [ext_resource type="PackedScene" uid="uid://43px8l1gsqr6" path="res://scenes/main_character.tscn" id="1_be5si"]
@@ -2936,11 +2937,13 @@ volume_db = -20.0
 autoplay = true
 
 [connection signal="input_event" from="TextureRect/CharacterBody2D" to="TextureRect/CharacterBody2D" method="_process"]
+=======
+[gd_scene load_steps=5 format=3 uid="uid://dugbq1fj41bnt"]
 
 [ext_resource type="Texture2D" uid="uid://bnl1jaywef7af" path="res://assets/water_sprite.png" id="1_08ka3"]
 [ext_resource type="Texture2D" uid="uid://dcad4ejkmawkv" path="res://assets/wood-bridge-sprite.png" id="2_afccr"]
 [ext_resource type="PackedScene" uid="uid://43px8l1gsqr6" path="res://scenes/main_character.tscn" id="2_xsbh7"]
-[ext_resource type="PackedScene" uid="uid://6cl3g4egnea7" path="res://fence_scene.tscn" id="4_nxsuo"]
+[ext_resource type="PackedScene" path="res://fence_scene.tscn" id="4_nxsuo"]
 
 [node name="2" type="Node2D"]
 position = Vector2(-9, -1260)
@@ -3077,3 +3080,4 @@ position = Vector2(297.937, -1207.25)
 scale = Vector2(0.266153, 0.248992)
 
 [connection signal="input_event" from="CharacterBody2D" to="CharacterBody2D" method="_process"]
+>>>>>>> f9a17b2bcfd968622085930fa773eb626614ed9c
