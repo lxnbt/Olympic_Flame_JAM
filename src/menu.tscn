@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://dgn4vsukahcw8"]
+[gd_scene load_steps=3 format=3 uid="uid://6j0tw3t27txe"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_f8qra"]
 [ext_resource type="PackedScene" uid="uid://2ggaj5d5x7x8" path="res://scenes/moving_flame.tscn" id="2_annbp"]
@@ -15,26 +15,26 @@ script = ExtResource("1_f8qra")
 
 [node name="Start" type="Button" parent="."]
 layout_mode = 2
-offset_left = 125.0
-offset_top = 250.0
-offset_right = 375.0
-offset_bottom = 340.0
+offset_left = 153.0
+offset_top = 290.0
+offset_right = 353.0
+offset_bottom = 365.0
 text = "Start"
 
 [node name="Levels" type="Button" parent="."]
 layout_mode = 2
-offset_left = 125.0
-offset_top = 400.0
-offset_right = 375.0
-offset_bottom = 490.0
+offset_left = 153.0
+offset_top = 430.0
+offset_right = 353.0
+offset_bottom = 505.0
 text = "Levels"
 
 [node name="Quit" type="Button" parent="."]
 layout_mode = 2
-offset_left = 125.0
-offset_top = 550.0
-offset_right = 375.0
-offset_bottom = 640.0
+offset_left = 153.0
+offset_top = 558.0
+offset_right = 353.0
+offset_bottom = 633.0
 size_flags_vertical = 0
 text = "Quit"
 
