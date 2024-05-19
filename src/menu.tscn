@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://6j0tw3t27txe"]
+[gd_scene load_steps=3 format=3 uid="uid://dgn4vsukahcw8"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_f8qra"]
+[ext_resource type="PackedScene" uid="uid://2ggaj5d5x7x8" path="res://scenes/moving_flame.tscn" id="2_annbp"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -47,6 +48,8 @@ text = "Olympic Flame
 Run"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_annbp")]
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Levels" to="." method="_on_levels_pressed"]

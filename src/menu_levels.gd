@@ -17,3 +17,6 @@ func _on_2_pressed():
 
 func _on_3_pressed():
 	pass
+
+func _on_exit_pressed():
+	get_tree().change_scene_to_file("res://menu.tscn")
