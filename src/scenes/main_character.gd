@@ -15,3 +15,6 @@ func _ready():
 
 func _process(delta):
 	position += Input.get_vector("move_left", "move_right", "move_up", "move_down") * SPEED * delta
+	var collision = move_and_collide(velocity * delta)
+	if collision:
+		print("I collided with ", collision.get_collider().name)
