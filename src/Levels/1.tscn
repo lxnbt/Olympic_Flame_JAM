@@ -1,9 +1,9 @@
-[gd_scene load_steps=12 format=3 uid="uid://be6l0uwhw2yle"]
+[gd_scene load_steps=12 format=3 uid="uid://dvhxx3bf4r5b4"]
 
-[ext_resource type="Texture2D" uid="uid://buy5yjx0dfn3h" path="res://assets/ground.png" id="1_vvvfp"]
-[ext_resource type="PackedScene" path="res://trees_scene.tscn" id="2_n43ry"]
+[ext_resource type="Texture2D" uid="uid://dd4bs0o72quiv" path="res://assets/ground.png" id="1_vvvfp"]
+[ext_resource type="PackedScene" uid="uid://btulqt1du2qtb" path="res://trees_scene.tscn" id="2_n43ry"]
 [ext_resource type="Texture2D" uid="uid://cd06vbcngf8c3" path="res://assets/rocks.png" id="3_oxuro"]
-[ext_resource type="PackedScene" path="res://fence_scene.tscn" id="4_v51eu"]
+[ext_resource type="PackedScene" uid="uid://6cl3g4egnea7" path="res://fence_scene.tscn" id="4_v51eu"]
 [ext_resource type="PackedScene" uid="uid://43px8l1gsqr6" path="res://scenes/main_character.tscn" id="5_xqwo6"]
 
 [sub_resource type="GDScript" id="GDScript_1te6f"]
