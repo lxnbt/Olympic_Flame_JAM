@@ -9,7 +9,7 @@ func _on_1_pressed():
 	get_tree().change_scene_to_file("res://Levels/1.tscn")
 
 func _on_2_pressed():
-	pass
+	get_tree().change_scene_to_file("res://Levels/2.tscn")
 
 func _on_3_pressed():
 	pass

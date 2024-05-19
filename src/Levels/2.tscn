@@ -1,0 +1,64 @@
+[gd_scene load_steps=5 format=3 uid="uid://cvpuhf3dfgi3w"]
+
+[ext_resource type="Texture2D" uid="uid://bnl1jaywef7af" path="res://assets/water_sprite.png" id="1_08ka3"]
+[ext_resource type="Texture2D" uid="uid://dcad4ejkmawkv" path="res://assets/wood-bridge-sprite.png" id="2_afccr"]
+[ext_resource type="PackedScene" uid="uid://43px8l1gsqr6" path="res://scenes/main_character.tscn" id="2_xsbh7"]
+[ext_resource type="PackedScene" path="res://fence_scene.tscn" id="4_nxsuo"]
+
+[node name="2" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -103.0
+offset_top = -160.0
+offset_right = 602.0
+offset_bottom = 2158.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+texture = ExtResource("1_08ka3")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = -156.0
+offset_top = -87.0
+offset_right = 655.0
+offset_bottom = 2313.0
+texture = ExtResource("2_afccr")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_xsbh7")]
+position = Vector2(15, 1238)
+
+[node name="Sprite2D10" parent="." instance=ExtResource("4_nxsuo")]
+position = Vector2(355, 734)
+scale = Vector2(0.266153, 0.248992)
+
+[node name="Sprite2D11" parent="." instance=ExtResource("4_nxsuo")]
+position = Vector2(136, 1487)
+scale = Vector2(0.266153, 0.248992)
+
+[node name="Sprite2D12" parent="." instance=ExtResource("4_nxsuo")]
+position = Vector2(300, 734)
+scale = Vector2(0.266153, 0.248992)
+
+[node name="Sprite2D13" parent="." instance=ExtResource("4_nxsuo")]
+position = Vector2(249, 734)
+scale = Vector2(0.266153, 0.248992)
+
+[node name="Sprite2D14" parent="." instance=ExtResource("4_nxsuo")]
+position = Vector2(422, 1485)
+scale = Vector2(0.266153, 0.248992)
+
+[node name="Sprite2D15" parent="." instance=ExtResource("4_nxsuo")]
+position = Vector2(372, 1485)
+scale = Vector2(0.266153, 0.248992)
+
+[node name="Sprite2D16" parent="." instance=ExtResource("4_nxsuo")]
+position = Vector2(323, 1485)
+scale = Vector2(0.266153, 0.248992)
+
+[connection signal="input_event" from="CharacterBody2D" to="CharacterBody2D" method="_process"]
