@@ -2815,21 +2815,16 @@ sources/0 = SubResource("TileSetAtlasSource_me4h1")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_03irk"]
 size = Vector2(109, 1783)
-size = Vector2(109, 1783)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_khscs"]
 size = Vector2(58, 60)
-size = Vector2(58, 60)
 
 [node name="2" type="Node2D"]
+metadata/_edit_vertical_guides_ = [10.0]
 
 [node name="TextureRect" type="TextureRect" parent="."]
 visible = false
 texture_filter = 1
-offset_left = -938.0
-offset_top = -2911.0
-offset_right = 1568.0
-offset_bottom = 1245.0
 offset_left = -938.0
 offset_top = -2911.0
 offset_right = 1568.0
@@ -2841,87 +2836,78 @@ stretch_mode = 1
 [node name="CharacterBody2D" parent="." instance=ExtResource("5_xqwo6")]
 position = Vector2(-36, 29)
 
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(244, 700)
+limit_left = 0
+limit_top = -1000
+position_smoothing_enabled = true
+position_smoothing_speed = 3.0
+
 [node name="Tree33" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(21, -194)
 scale = Vector2(1.18596, 1.35974)
 
-[node name="Tree1" parent="." instance=ExtResource("2_n43ry")]
-[node name="Tree1" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree2" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(-12, 474)
 scale = Vector2(1.22602, 1.14979)
 
-[node name="Tree2" parent="." instance=ExtResource("2_n43ry")]
-[node name="Tree2" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree4" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(-8, 600)
 scale = Vector2(1.20582, 1.32851)
 
-[node name="Tree3" parent="." instance=ExtResource("2_n43ry")]
-[node name="Tree3" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree6" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(516, 619)
 scale = Vector2(1.19802, 1.32034)
 
-[node name="Tree4" parent="." instance=ExtResource("2_n43ry")]
-[node name="Tree4" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree8" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(-8, 737)
 scale = Vector2(1.18596, 1.53501)
 
-[node name="Tree5" parent="." instance=ExtResource("2_n43ry")]
-[node name="Tree5" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree10" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(512, 747)
 scale = Vector2(1.20297, 1.40741)
 
-[node name="Tree6" parent="." instance=ExtResource("2_n43ry")]
-[node name="Tree6" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree12" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(514, -66)
 scale = Vector2(1.19932, 1.15534)
 
-[node name="Tree7" parent="." instance=ExtResource("2_n43ry")]
-[node name="Tree7" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree14" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(-8.00001, 367)
 scale = Vector2(1.21473, 1.26638)
 
-[node name="Tree8" parent="." instance=ExtResource("2_n43ry")]
-[node name="Tree8" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree16" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(512, 270)
 scale = Vector2(1.19968, 1.20136)
 
-[node name="Tree9" parent="." instance=ExtResource("2_n43ry")]
-[node name="Tree9" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree18" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(513, 500)
 scale = Vector2(1.2088, 1.1165)
 
-[node name="Tree10" parent="." instance=ExtResource("2_n43ry")]
-[node name="Tree10" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree20" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(513, 387)
 scale = Vector2(1.21412, 1.19407)
 
-[node name="Tree11" parent="." instance=ExtResource("2_n43ry")]
-[node name="Tree11" parent="." instance=ExtResource("2_n43ry")]
-position = Vector2(-4, 32)
+[node name="Tree22" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(-6.99999, 30)
 scale = Vector2(1.21634, 1.14926)
 
-[node name="Tree12" parent="." instance=ExtResource("2_n43ry")]
-[node name="Tree12" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree24" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(-8, 251)
 scale = Vector2(1.21782, 1.13038)
 
-[node name="Tree13" parent="." instance=ExtResource("2_n43ry")]
-[node name="Tree13" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree26" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(-1, -78)
 scale = Vector2(1.21264, 1.22979)
 
-[node name="Tree14" parent="." instance=ExtResource("2_n43ry")]
-[node name="Tree14" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree28" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(-5, 140)
 scale = Vector2(1.21136, 1.09936)
 
-[node name="Tree15" parent="." instance=ExtResource("2_n43ry")]
-[node name="Tree15" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree30" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(514, 157)
 scale = Vector2(1.22498, 1.17271)
 
-[node name="Tree16" parent="." instance=ExtResource("2_n43ry")]
-[node name="Tree16" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree32" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(513, 43)
 scale = Vector2(1.20468, 1.14841)
 
@@ -2937,15 +2923,15 @@ scale = Vector2(0.266153, 0.248992)
 position = Vector2(304, -78.0001)
 scale = Vector2(0.270378, 0.274783)
 
-[node name="Fence1" parent="." instance=ExtResource("4_v51eu")]
+[node name="Fence4" parent="." instance=ExtResource("4_v51eu")]
 position = Vector2(124, 635)
 scale = Vector2(0.252485, 0.315292)
 
-[node name="Fence2" parent="." instance=ExtResource("4_v51eu")]
+[node name="Fence5" parent="." instance=ExtResource("4_v51eu")]
 position = Vector2(341, 382)
 scale = Vector2(0.266153, 0.248992)
 
-[node name="Fence3" parent="." instance=ExtResource("4_v51eu")]
+[node name="Fence6" parent="." instance=ExtResource("4_v51eu")]
 position = Vector2(304, -78.0001)
 scale = Vector2(0.270378, 0.274783)
 
@@ -2960,12 +2946,10 @@ layer_0/tile_data = PackedInt32Array(1507341, 393216, 17, 1572877, 393216, 18, 1
 position = Vector2(-43, 46)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(44, -102.5)
-position = Vector2(44, -102.5)
+position = Vector2(38, -104)
 shape = SubResource("RectangleShape2D_03irk")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(551, -135)
 position = Vector2(551, -135)
 shape = SubResource("RectangleShape2D_03irk")
 
@@ -2981,135 +2965,135 @@ shape = SubResource("RectangleShape2D_khscs")
 position = Vector2(347, -123)
 shape = SubResource("RectangleShape2D_khscs")
 
-[node name="Tree17" parent="." instance=ExtResource("2_n43ry")]
-position = Vector2(9, -461)
-scale = Vector2(1.22602, 1.14979)
-
-[node name="Tree18" parent="." instance=ExtResource("2_n43ry")]
-position = Vector2(37, -375)
-scale = Vector2(1.20582, 1.32851)
-
-[node name="Tree19" parent="." instance=ExtResource("2_n43ry")]
-position = Vector2(485, -321)
-scale = Vector2(1.19802, 1.32034)
-
-[node name="Tree20" parent="." instance=ExtResource("2_n43ry")]
-position = Vector2(-2, -290.026)
-scale = Vector2(1.18596, 1.35974)
-
-[node name="Tree21" parent="." instance=ExtResource("2_n43ry")]
-position = Vector2(514, -191)
-scale = Vector2(1.20297, 1.40741)
-
-[node name="Tree22" parent="." instance=ExtResource("2_n43ry")]
-position = Vector2(448, -875)
-scale = Vector2(1.19932, 1.15534)
-
-[node name="Tree23" parent="." instance=ExtResource("2_n43ry")]
-position = Vector2(-2, -550)
-scale = Vector2(1.21473, 1.26638)
-
-[node name="Tree24" parent="." instance=ExtResource("2_n43ry")]
-position = Vector2(535, -573)
-scale = Vector2(1.19968, 1.20136)
-
-[node name="Tree25" parent="." instance=ExtResource("2_n43ry")]
-position = Vector2(515, -432)
-scale = Vector2(1.2088, 1.1165)
-
-[node name="Tree26" parent="." instance=ExtResource("2_n43ry")]
-position = Vector2(492, -523)
-scale = Vector2(1.21412, 1.19407)
-
-[node name="Tree27" parent="." instance=ExtResource("2_n43ry")]
-position = Vector2(1, -812)
-scale = Vector2(1.21634, 1.14926)
-
-[node name="Tree28" parent="." instance=ExtResource("2_n43ry")]
-position = Vector2(20, -629)
-scale = Vector2(1.21782, 1.13038)
-
-[node name="Tree29" parent="." instance=ExtResource("2_n43ry")]
-position = Vector2(-4.76837e-07, -892)
-scale = Vector2(1.21264, 1.22979)
-
-[node name="Tree30" parent="." instance=ExtResource("2_n43ry")]
-position = Vector2(6, -721)
-scale = Vector2(1.21136, 1.09936)
-
-[node name="Tree31" parent="." instance=ExtResource("2_n43ry")]
-position = Vector2(500, -682)
-scale = Vector2(1.22498, 1.17271)
-
-[node name="Tree32" parent="." instance=ExtResource("2_n43ry")]
-position = Vector2(464, -785)
-scale = Vector2(1.20468, 1.14841)
-
-[node name="Fence3" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="Fence4" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(347, -123)
 shape = SubResource("RectangleShape2D_khscs")
 
-[node name="Tree17" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree34" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(9, -461)
 scale = Vector2(1.22602, 1.14979)
 
-[node name="Tree18" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree35" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(37, -375)
 scale = Vector2(1.20582, 1.32851)
 
-[node name="Tree19" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree36" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(485, -321)
 scale = Vector2(1.19802, 1.32034)
 
-[node name="Tree20" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree37" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(-2, -290.026)
 scale = Vector2(1.18596, 1.35974)
 
-[node name="Tree21" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree38" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(514, -191)
 scale = Vector2(1.20297, 1.40741)
 
-[node name="Tree22" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree39" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(448, -875)
 scale = Vector2(1.19932, 1.15534)
 
-[node name="Tree23" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree40" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(-2, -550)
 scale = Vector2(1.21473, 1.26638)
 
-[node name="Tree24" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree41" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(535, -573)
 scale = Vector2(1.19968, 1.20136)
 
-[node name="Tree25" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree42" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(515, -432)
 scale = Vector2(1.2088, 1.1165)
 
-[node name="Tree26" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree43" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(492, -523)
 scale = Vector2(1.21412, 1.19407)
 
-[node name="Tree27" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree44" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(1, -812)
 scale = Vector2(1.21634, 1.14926)
 
-[node name="Tree28" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree45" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(20, -629)
 scale = Vector2(1.21782, 1.13038)
 
-[node name="Tree29" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree46" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(-4.76837e-07, -892)
 scale = Vector2(1.21264, 1.22979)
 
-[node name="Tree30" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree47" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(6, -721)
 scale = Vector2(1.21136, 1.09936)
 
-[node name="Tree31" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree48" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(500, -682)
 scale = Vector2(1.22498, 1.17271)
 
-[node name="Tree32" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree49" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(464, -785)
+scale = Vector2(1.20468, 1.14841)
+
+[node name="Tree50" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(9, -461)
+scale = Vector2(1.22602, 1.14979)
+
+[node name="Tree51" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(37, -375)
+scale = Vector2(1.20582, 1.32851)
+
+[node name="Tree52" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(485, -321)
+scale = Vector2(1.19802, 1.32034)
+
+[node name="Tree53" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(-2, -290.026)
+scale = Vector2(1.18596, 1.35974)
+
+[node name="Tree54" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(514, -191)
+scale = Vector2(1.20297, 1.40741)
+
+[node name="Tree55" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(448, -875)
+scale = Vector2(1.19932, 1.15534)
+
+[node name="Tree56" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(-2, -550)
+scale = Vector2(1.21473, 1.26638)
+
+[node name="Tree57" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(535, -573)
+scale = Vector2(1.19968, 1.20136)
+
+[node name="Tree58" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(515, -432)
+scale = Vector2(1.2088, 1.1165)
+
+[node name="Tree59" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(492, -523)
+scale = Vector2(1.21412, 1.19407)
+
+[node name="Tree60" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(1, -812)
+scale = Vector2(1.21634, 1.14926)
+
+[node name="Tree61" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(20, -629)
+scale = Vector2(1.21782, 1.13038)
+
+[node name="Tree62" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(-4.76837e-07, -892)
+scale = Vector2(1.21264, 1.22979)
+
+[node name="Tree63" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(6, -721)
+scale = Vector2(1.21136, 1.09936)
+
+[node name="Tree64" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(500, -682)
+scale = Vector2(1.22498, 1.17271)
+
+[node name="Tree65" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(464, -785)
 scale = Vector2(1.20468, 1.14841)
 
