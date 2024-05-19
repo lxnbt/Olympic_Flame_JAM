@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cenowsur8523b"
-path="res://.godot/imported/olympique game run(14).png-fe6b965ac7a387aaa28b1fb0ca8f192d.ctex"
+uid="uid://c1towjj7nxrem"
+path="res://.godot/imported/olympique game run(16).png-9a748d60df9839fb4e1b899c337ebe9b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://olympique game run(14).png"
-dest_files=["res://.godot/imported/olympique game run(14).png-fe6b965ac7a387aaa28b1fb0ca8f192d.ctex"]
+source_file="res://assets/olympique game run(16).png"
+dest_files=["res://.godot/imported/olympique game run(16).png-9a748d60df9839fb4e1b899c337ebe9b.ctex"]
 
 [params]
 

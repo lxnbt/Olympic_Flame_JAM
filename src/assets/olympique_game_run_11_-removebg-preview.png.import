@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2tf38lmhq3uc"
-path="res://.godot/imported/olympique_game_run_5_-removebg-preview.png-7d375f0bfebb9f0cdadfe2d13d7f9edc.ctex"
+uid="uid://6vyg22pj5q46"
+path="res://.godot/imported/olympique_game_run_11_-removebg-preview.png-ffe5b00865fb68e949cf587c42657e29.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://olympique_game_run_5_-removebg-preview.png"
-dest_files=["res://.godot/imported/olympique_game_run_5_-removebg-preview.png-7d375f0bfebb9f0cdadfe2d13d7f9edc.ctex"]
+source_file="res://assets/olympique_game_run_11_-removebg-preview.png"
+dest_files=["res://.godot/imported/olympique_game_run_11_-removebg-preview.png-ffe5b00865fb68e949cf587c42657e29.ctex"]
 
 [params]
 

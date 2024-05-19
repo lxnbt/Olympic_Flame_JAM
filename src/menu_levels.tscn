@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://b3hbi5sthfehe"]
+[gd_scene load_steps=7 format=3 uid="uid://b3hbi5sthfehe"]
 
 [ext_resource type="Script" path="res://menu_levels.gd" id="1_0y7e4"]
-[ext_resource type="Texture2D" uid="uid://d3515yx3baqko" path="res://olympique game run(15).png" id="2_42swe"]
-[ext_resource type="Texture2D" uid="uid://6vyg22pj5q46" path="res://olympique_game_run_11_-removebg-preview.png" id="2_yxjwt"]
-[ext_resource type="Texture2D" uid="uid://bopfxve4l5aly" path="res://olympique_game_run_12_-removebg-preview.png" id="3_dmdul"]
-[ext_resource type="Texture2D" uid="uid://04c1huhowiv6" path="res://olympique_game_run_13_-removebg-preview.png" id="4_xvoxp"]
+[ext_resource type="Texture2D" uid="uid://c1towjj7nxrem" path="res://assets/olympique game run(16).png" id="2_w6ubh"]
+[ext_resource type="Texture2D" uid="uid://csprdoht2ul5r" path="res://assets/olympique_game_run_17_-removebg-preview.png" id="3_3cdvf"]
+[ext_resource type="Texture2D" uid="uid://demvra8t7n8ig" path="res://assets/olympique_game_run_18_-removebg-preview.png" id="4_wt4pt"]
+[ext_resource type="Texture2D" uid="uid://brotpokhchovg" path="res://assets/olympique_game_run_19_-removebg-preview.png" id="5_3mo21"]
+[ext_resource type="Texture2D" uid="uid://bprr0rl13eb7a" path="res://assets/olympique_game_run_20_-removebg-preview.png" id="6_b8vvp"]
 
 [node name="Menu_levels" type="Control"]
 layout_mode = 3
@@ -30,6 +31,55 @@ text = "Levels :"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -36.0
+offset_top = -5.0
+offset_right = 537.0
+offset_bottom = 805.0
+texture = ExtResource("2_w6ubh")
+expand_mode = 3
+
+[node name="1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 68.0
+offset_top = 331.0
+offset_right = 102.0
+offset_bottom = 362.0
+text = "1
+"
+
+[node name="Sprite2D" type="Sprite2D" parent="1"]
+position = Vector2(9, 14)
+scale = Vector2(0.853571, 0.791246)
+texture = ExtResource("3_3cdvf")
+
+[node name="2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 228.0
+offset_top = 330.0
+offset_right = 276.0
+offset_bottom = 374.0
+text = "2"
+
+[node name="Sprite2D" type="Sprite2D" parent="2"]
+position = Vector2(29, 20.4434)
+scale = Vector2(0.866667, 0.776285)
+texture = ExtResource("4_wt4pt")
+
+[node name="3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 410.0
+offset_top = 342.0
+offset_right = 428.0
+offset_bottom = 373.0
+text = "3"
+
+[node name="Sprite2D" type="Sprite2D" parent="3"]
+position = Vector2(21.125, 8.18745)
+scale = Vector2(0.86131, 0.810817)
+texture = ExtResource("5_3mo21")
+
 [node name="Exit" type="Button" parent="."]
 layout_mode = 0
 offset_left = 405.0
@@ -38,56 +88,11 @@ offset_right = 486.0
 offset_bottom = 784.0
 text = "Exit"
 
-[node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 0
-offset_left = -36.0
-offset_top = -5.0
-offset_right = 537.0
-offset_bottom = 805.0
-texture = ExtResource("2_42swe")
-expand_mode = 3
+[node name="Sprite2D" type="Sprite2D" parent="Exit"]
+position = Vector2(16, 23)
+texture = ExtResource("6_b8vvp")
 
-[node name="1" type="Button" parent="."]
-layout_mode = 0
-offset_left = 56.0
-offset_top = 370.0
-offset_right = 90.0
-offset_bottom = 401.0
-text = "1
-"
-
-[node name="Sprite2D" type="Sprite2D" parent="1"]
-position = Vector2(33, 93)
-scale = Vector2(0.797619, 0.649832)
-texture = ExtResource("2_yxjwt")
-
-[node name="2" type="Button" parent="."]
-layout_mode = 0
-offset_left = 218.0
-offset_top = 377.0
-offset_right = 239.0
-offset_bottom = 408.0
-text = "2"
-
-[node name="Sprite2D" type="Sprite2D" parent="2"]
-position = Vector2(32, 90)
-scale = Vector2(0.847619, 0.639099)
-texture = ExtResource("3_dmdul")
-
-[node name="3" type="Button" parent="."]
-layout_mode = 0
-offset_left = 372.0
-offset_top = 363.0
-offset_right = 390.0
-offset_bottom = 394.0
-text = "3"
-
-[node name="Sprite2D" type="Sprite2D" parent="3"]
-position = Vector2(41, 115)
-scale = Vector2(0.769048, 0.739057)
-texture = ExtResource("4_xvoxp")
-
-[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="1" to="." method="_on_1_pressed"]
 [connection signal="pressed" from="2" to="." method="_on_2_pressed"]
 [connection signal="pressed" from="3" to="." method="_on_3_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

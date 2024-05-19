@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" path="res://menu.gd" id="1_f8qra"]
 [ext_resource type="PackedScene" uid="uid://2ggaj5d5x7x8" path="res://scenes/moving_flame.tscn" id="2_annbp"]
-[ext_resource type="Texture2D" uid="uid://bg46iveevqww7" path="res://olympique game run(8).png" id="2_egg4j"]
-[ext_resource type="Texture2D" uid="uid://2tf38lmhq3uc" path="res://olympique_game_run_5_-removebg-preview.png" id="3_rs3k7"]
-[ext_resource type="Texture2D" uid="uid://co72ksxv4rl4b" path="res://olympique_game_run_7_-removebg-preview.png" id="4_c336m"]
-[ext_resource type="Texture2D" uid="uid://5w525incouqx" path="res://olympique_game_run_9_-removebg-preview(1).png" id="5_j2vcf"]
+[ext_resource type="Texture2D" uid="uid://bg46iveevqww7" path="res://assets/olympique game run(8).png" id="2_egg4j"]
+[ext_resource type="Texture2D" uid="uid://2tf38lmhq3uc" path="res://assets/olympique_game_run_5_-removebg-preview.png" id="3_rs3k7"]
+[ext_resource type="Texture2D" uid="uid://co72ksxv4rl4b" path="res://assets/olympique_game_run_7_-removebg-preview.png" id="4_c336m"]
+[ext_resource type="Texture2D" uid="uid://5w525incouqx" path="res://assets/olympique_game_run_9_-removebg-preview(1).png" id="5_j2vcf"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
