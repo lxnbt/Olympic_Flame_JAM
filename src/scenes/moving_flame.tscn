@@ -88,7 +88,7 @@ rotation = -0.532114
 scale = Vector2(1, 1.01786)
 sprite_frames = SubResource("SpriteFrames_pxa1d")
 autoplay = "default"
-frame_progress = 0.0492129
+frame_progress = 0.0996865
 
 [node name="Flame2" type="AnimatedSprite2D" parent="."]
 position = Vector2(51, 728)
@@ -96,4 +96,4 @@ rotation = 0.578393
 scale = Vector2(1, 1.01786)
 sprite_frames = SubResource("SpriteFrames_pxa1d")
 autoplay = "default"
-frame_progress = 0.838484
+frame_progress = 0.888958
