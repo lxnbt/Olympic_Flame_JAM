@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://pqnryd81m6q"]
+[gd_scene load_steps=5 format=3 uid="uid://dgeqlsjb6iccm"]
 
 [ext_resource type="Texture2D" uid="uid://bnl1jaywef7af" path="res://assets/water_sprite.png" id="1_08ka3"]
 [ext_resource type="Texture2D" uid="uid://dcad4ejkmawkv" path="res://assets/wood-bridge-sprite.png" id="2_afccr"]

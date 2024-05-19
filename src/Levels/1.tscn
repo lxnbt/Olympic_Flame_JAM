@@ -2822,7 +2822,7 @@ size = Vector2(109, 1783)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_khscs"]
 size = Vector2(58, 60)
 
-[node name="2" type="Node2D"]
+[node name="3" type="Node2D"]
 metadata/_edit_vertical_guides_ = [10.0]
 
 [node name="TextureRect" type="TextureRect" parent="."]
