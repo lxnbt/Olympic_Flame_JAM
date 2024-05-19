@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://2ggaj5d5x7x8"]
 
-[ext_resource type="Texture2D" uid="uid://bgg4miesu765j" path="res://assets/flame.png" id="1_uii4g"]
+[ext_resource type="Texture2D" uid="uid://tovbr4hqv3ed" path="res://assets/flame.png" id="1_uii4g"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i2lbv"]
 atlas = ExtResource("1_uii4g")
@@ -101,16 +101,26 @@ autoplay = "default"
 frame_progress = 0.888958
 
 [node name="Flame1" type="AnimatedSprite2D" parent="."]
+<<<<<<< HEAD
+position = Vector2(419, 734)
+rotation = -0.532114
+=======
 position = Vector2(445, 720)
 rotation = -0.523599
+>>>>>>> f9a17b2bcfd968622085930fa773eb626614ed9c
 scale = Vector2(1, 1.01786)
 sprite_frames = SubResource("SpriteFrames_pxa1d")
 autoplay = "default"
 frame_progress = 0.0996865
 
 [node name="Flame2" type="AnimatedSprite2D" parent="."]
+<<<<<<< HEAD
+position = Vector2(44, 748)
+rotation = 0.578393
+=======
 position = Vector2(60, 720)
 rotation = 0.523599
+>>>>>>> f9a17b2bcfd968622085930fa773eb626614ed9c
 scale = Vector2(1, 1.01786)
 sprite_frames = SubResource("SpriteFrames_pxa1d")
 autoplay = "default"
