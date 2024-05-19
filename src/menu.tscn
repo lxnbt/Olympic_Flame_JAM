@@ -1,44 +1,78 @@
-[gd_scene load_steps=3 format=3 uid="uid://dgn4vsukahcw8"]
+[gd_scene load_steps=7 format=3 uid="uid://dgn4vsukahcw8"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_f8qra"]
 [ext_resource type="PackedScene" uid="uid://2ggaj5d5x7x8" path="res://scenes/moving_flame.tscn" id="2_annbp"]
+[ext_resource type="Texture2D" uid="uid://dwtbj3ino1noi" path="res://olympique game run(8).png" id="2_flb88"]
+[ext_resource type="Texture2D" uid="uid://di0qspn55nsd" path="res://olympique_game_run_5_-removebg-preview.png" id="3_2b630"]
+[ext_resource type="Texture2D" uid="uid://dbmodhb5qetuk" path="res://olympique_game_run_7_-removebg-preview.png" id="4_1p8e6"]
+[ext_resource type="Texture2D" uid="uid://dogkl85buem4t" path="res://olympique_game_run_9_-removebg-preview(1).png" id="5_q07it"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -494.0
+offset_top = 115.0
+offset_right = 107.0
+offset_bottom = 1170.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 0
 script = ExtResource("1_f8qra")
+metadata/_edit_horizontal_guides_ = [-948.0]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 465.0
+offset_top = -119.0
+offset_right = 1029.0
+offset_bottom = 679.0
+texture = ExtResource("2_flb88")
+expand_mode = 3
 
 [node name="Start" type="Button" parent="."]
 layout_mode = 2
-offset_left = 125.0
-offset_top = 250.0
-offset_right = 375.0
-offset_bottom = 340.0
+offset_left = 735.0
+offset_top = 192.0
+offset_right = 826.0
+offset_bottom = 236.0
 text = "Start"
+
+[node name="Sprite2D" type="Sprite2D" parent="Start"]
+position = Vector2(25.375, 31)
+scale = Vector2(1.2744, 1.39394)
+texture = ExtResource("3_2b630")
 
 [node name="Levels" type="Button" parent="."]
 layout_mode = 2
-offset_left = 125.0
-offset_top = 400.0
-offset_right = 375.0
-offset_bottom = 490.0
+offset_left = 688.0
+offset_top = 332.0
+offset_right = 825.0
+offset_bottom = 381.0
 text = "Levels"
+
+[node name="Sprite2D" type="Sprite2D" parent="Levels"]
+position = Vector2(74, 20)
+scale = Vector2(1.29167, 1.4234)
+texture = ExtResource("4_1p8e6")
 
 [node name="Quit" type="Button" parent="."]
 layout_mode = 2
-offset_left = 125.0
-offset_top = 550.0
-offset_right = 375.0
-offset_bottom = 640.0
+offset_left = 727.0
+offset_top = 470.0
+offset_right = 850.0
+offset_bottom = 513.0
 size_flags_vertical = 0
 text = "Quit"
 
+[node name="Sprite2D" type="Sprite2D" parent="Quit"]
+position = Vector2(35, 21)
+scale = Vector2(1.23958, 1.46801)
+texture = ExtResource("5_q07it")
+
 [node name="Title" type="Label" parent="."]
+visible = false
 layout_mode = 0
 offset_right = 9980.0
 offset_bottom = 3960.0
@@ -50,6 +84,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_annbp")]
+position = Vector2(528, -164)
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Levels" to="." method="_on_levels_pressed"]

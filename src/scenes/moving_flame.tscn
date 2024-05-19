@@ -83,7 +83,7 @@ animations = [{
 [node name="CharacterBody2D" type="CharacterBody2D"]
 
 [node name="Flame1" type="AnimatedSprite2D" parent="."]
-position = Vector2(450, 723)
+position = Vector2(419, 734)
 rotation = -0.532114
 scale = Vector2(1, 1.01786)
 sprite_frames = SubResource("SpriteFrames_pxa1d")
@@ -91,7 +91,7 @@ autoplay = "default"
 frame_progress = 0.0996865
 
 [node name="Flame2" type="AnimatedSprite2D" parent="."]
-position = Vector2(51, 728)
+position = Vector2(44, 748)
 rotation = 0.578393
 scale = Vector2(1, 1.01786)
 sprite_frames = SubResource("SpriteFrames_pxa1d")

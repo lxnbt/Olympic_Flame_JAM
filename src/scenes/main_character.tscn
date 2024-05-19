@@ -116,8 +116,8 @@ animations = [{
 "speed": 2.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rkyea"]
-radius = 13.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o3bdj"]
+radius = 16.0
 height = 50.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
@@ -136,5 +136,5 @@ frame_progress = 0.0293875
 offset = Vector2(21, 21)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(247, 695)
-shape = SubResource("CapsuleShape2D_rkyea")
+position = Vector2(248, 696)
+shape = SubResource("CapsuleShape2D_o3bdj")
