@@ -1,11 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://dgn4vsukahcw8"]
+[gd_scene load_steps=3 format=3 uid="uid://dgn4vsukahcw8"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_f8qra"]
 [ext_resource type="PackedScene" uid="uid://2ggaj5d5x7x8" path="res://scenes/moving_flame.tscn" id="2_annbp"]
-[ext_resource type="Texture2D" uid="uid://dwtbj3ino1noi" path="res://assets/olympique game run(8).png" id="2_flb88"]
-[ext_resource type="Texture2D" uid="uid://di0qspn55nsd" path="res://assets/olympique_game_run_5_-removebg-preview.png" id="3_2b630"]
-[ext_resource type="Texture2D" uid="uid://dbmodhb5qetuk" path="res://assets/olympique_game_run_7_-removebg-preview.png" id="4_1p8e6"]
-[ext_resource type="Texture2D" uid="uid://dogkl85buem4t" path="res://assets/olympique_game_run_9_-removebg-preview(1).png" id="5_q07it"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -28,15 +24,10 @@ offset_left = 465.0
 offset_top = -119.0
 offset_right = 1029.0
 offset_bottom = 679.0
-texture = ExtResource("2_flb88")
 expand_mode = 3
 
 [node name="Start" type="Button" parent="."]
 layout_mode = 2
-offset_left = 735.0
-offset_top = 192.0
-offset_right = 826.0
-offset_bottom = 236.0
 offset_left = 153.0
 offset_top = 290.0
 offset_right = 353.0
@@ -46,14 +37,9 @@ text = "Start"
 [node name="Sprite2D" type="Sprite2D" parent="Start"]
 position = Vector2(25.375, 31)
 scale = Vector2(1.2744, 1.39394)
-texture = ExtResource("3_2b630")
 
 [node name="Levels" type="Button" parent="."]
 layout_mode = 2
-offset_left = 688.0
-offset_top = 332.0
-offset_right = 825.0
-offset_bottom = 381.0
 offset_left = 153.0
 offset_top = 430.0
 offset_right = 353.0
@@ -63,14 +49,9 @@ text = "Levels"
 [node name="Sprite2D" type="Sprite2D" parent="Levels"]
 position = Vector2(74, 20)
 scale = Vector2(1.29167, 1.4234)
-texture = ExtResource("4_1p8e6")
 
 [node name="Quit" type="Button" parent="."]
 layout_mode = 2
-offset_left = 727.0
-offset_top = 470.0
-offset_right = 850.0
-offset_bottom = 513.0
 offset_left = 153.0
 offset_top = 558.0
 offset_right = 353.0
@@ -81,7 +62,6 @@ text = "Quit"
 [node name="Sprite2D" type="Sprite2D" parent="Quit"]
 position = Vector2(35, 21)
 scale = Vector2(1.23958, 1.46801)
-texture = ExtResource("5_q07it")
 
 [node name="Title" type="Label" parent="."]
 visible = false
