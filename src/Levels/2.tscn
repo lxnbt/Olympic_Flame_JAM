@@ -1,9 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://cvpuhf3dfgi3w"]
+[gd_scene load_steps=5 format=3 uid="uid://pqnryd81m6q"]
 
 [ext_resource type="Texture2D" uid="uid://bnl1jaywef7af" path="res://assets/water_sprite.png" id="1_08ka3"]
 [ext_resource type="Texture2D" uid="uid://dcad4ejkmawkv" path="res://assets/wood-bridge-sprite.png" id="2_afccr"]
 [ext_resource type="PackedScene" uid="uid://43px8l1gsqr6" path="res://scenes/main_character.tscn" id="2_xsbh7"]
-[ext_resource type="PackedScene" path="res://fence_scene.tscn" id="4_nxsuo"]
+[ext_resource type="PackedScene" uid="uid://6cl3g4egnea7" path="res://fence_scene.tscn" id="4_nxsuo"]
 
 [node name="2" type="Node2D"]
 
