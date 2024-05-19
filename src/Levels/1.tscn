@@ -1,12 +1,12 @@
 [gd_scene load_steps=12 format=3 uid="uid://be6l0uwhw2yle"]
 
-[ext_resource type="Texture2D" uid="uid://cxgxvcpwoof5d" path="res://assets/green_groung.png" id="1_y36b5"]
+[ext_resource type="Texture2D" uid="uid://benmthjrqdq2l" path="res://assets/green_groung.png" id="1_y36b5"]
 [ext_resource type="PackedScene" path="res://trees_scene.tscn" id="2_n43ry"]
-[ext_resource type="Texture2D" uid="uid://j7cqcqfq1x7g" path="res://assets/rocks.png" id="3_oxuro"]
+[ext_resource type="Texture2D" uid="uid://cd06vbcngf8c3" path="res://assets/rocks.png" id="3_oxuro"]
 [ext_resource type="PackedScene" uid="uid://6j1pxagfg5xu" path="res://fence_scene.tscn" id="4_v51eu"]
 [ext_resource type="PackedScene" uid="uid://43px8l1gsqr6" path="res://scenes/main_character.tscn" id="5_xqwo6"]
-[ext_resource type="AudioStream" uid="uid://cl6ys4reuujoj" path="res://adventure-time-209699.mp3" id="6_7htlx"]
-[ext_resource type="AudioStream" uid="uid://do8fkid735at4" path="res://punch-1-166694.mp3" id="6_j2f7c"]
+[ext_resource type="AudioStream" uid="uid://bgw6ucedndy0n" path="res://adventure-time-209699.mp3" id="6_7htlx"]
+[ext_resource type="AudioStream" uid="uid://b22bvap1njjlc" path="res://punch-1-166694.mp3" id="6_j2f7c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_me4h1"]
 texture = ExtResource("3_oxuro")
@@ -2816,117 +2816,143 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_me4h1")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_03irk"]
-size = Vector2(109, 940)
+size = Vector2(109, 1783)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_khscs"]
-size = Vector2(56, 52.5)
+size = Vector2(58, 60)
 
 [node name="2" type="Node2D"]
+metadata/_edit_vertical_guides_ = [10.0]
 
 [node name="TextureRect" type="TextureRect" parent="."]
+visible = false
 texture_filter = 1
-offset_left = -76.0
-offset_top = -107.0
-offset_right = 596.0
-offset_bottom = 826.0
+offset_left = -938.0
+offset_top = -2911.0
+offset_right = 1568.0
+offset_bottom = 1245.0
 texture = ExtResource("1_y36b5")
+expand_mode = 1
 stretch_mode = 1
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("5_xqwo6")]
-position = Vector2(36, -155)
+position = Vector2(-36, 29)
 
-[node name="Sprite2D18" parent="." instance=ExtResource("4_v51eu")]
-position = Vector2(124, 635)
-scale = Vector2(0.252485, 0.315292)
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(244, 700)
+limit_left = 0
+limit_top = -1000
+position_smoothing_enabled = true
+position_smoothing_speed = 3.0
 
-[node name="Sprite2D2" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree33" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(21, -194)
+scale = Vector2(1.18596, 1.35974)
+
+[node name="Tree2" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(-12, 474)
 scale = Vector2(1.22602, 1.14979)
 
-[node name="Sprite2D7" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree4" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(-8, 600)
 scale = Vector2(1.20582, 1.32851)
 
-[node name="Sprite2D9" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree6" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(516, 619)
 scale = Vector2(1.19802, 1.32034)
 
-[node name="Sprite2D8" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree8" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(-8, 737)
 scale = Vector2(1.18596, 1.53501)
 
-[node name="Sprite2D17" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree10" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(512, 747)
 scale = Vector2(1.20297, 1.40741)
 
-[node name="Sprite2D16" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree12" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(514, -66)
 scale = Vector2(1.19932, 1.15534)
 
-[node name="Sprite2D" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree14" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(-8.00001, 367)
 scale = Vector2(1.21473, 1.26638)
 
-[node name="Sprite2D13" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree16" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(512, 270)
 scale = Vector2(1.19968, 1.20136)
 
-[node name="Sprite2D11" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree18" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(513, 500)
 scale = Vector2(1.2088, 1.1165)
 
-[node name="Sprite2D12" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree20" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(513, 387)
 scale = Vector2(1.21412, 1.19407)
 
-[node name="Sprite2D5" parent="." instance=ExtResource("2_n43ry")]
-position = Vector2(-4, 32)
+[node name="Tree22" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(-6.99999, 30)
 scale = Vector2(1.21634, 1.14926)
 
-[node name="Sprite2D3" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree24" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(-8, 251)
 scale = Vector2(1.21782, 1.13038)
 
-[node name="Sprite2D6" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree26" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(-1, -78)
 scale = Vector2(1.21264, 1.22979)
 
-[node name="Sprite2D4" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree28" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(-5, 140)
 scale = Vector2(1.21136, 1.09936)
 
-[node name="Sprite2D10" parent="." instance=ExtResource("4_v51eu")]
-position = Vector2(341, 382)
-scale = Vector2(0.266153, 0.248992)
-
-[node name="Sprite2D19" parent="." instance=ExtResource("4_v51eu")]
-position = Vector2(304, -78.0001)
-scale = Vector2(0.270378, 0.274783)
-
-[node name="Sprite2D14" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree30" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(514, 157)
 scale = Vector2(1.22498, 1.17271)
 
-[node name="Sprite2D15" parent="." instance=ExtResource("2_n43ry")]
+[node name="Tree32" parent="." instance=ExtResource("2_n43ry")]
 position = Vector2(513, 43)
 scale = Vector2(1.20468, 1.14841)
+
+[node name="Fence1" parent="." instance=ExtResource("4_v51eu")]
+position = Vector2(124, 635)
+scale = Vector2(0.252485, 0.315292)
+
+[node name="Fence2" parent="." instance=ExtResource("4_v51eu")]
+position = Vector2(341, 382)
+scale = Vector2(0.266153, 0.248992)
+
+[node name="Fence3" parent="." instance=ExtResource("4_v51eu")]
+position = Vector2(304, -78.0001)
+scale = Vector2(0.270378, 0.274783)
+
+[node name="Fence4" parent="." instance=ExtResource("4_v51eu")]
+position = Vector2(124, 635)
+scale = Vector2(0.252485, 0.315292)
+
+[node name="Fence5" parent="." instance=ExtResource("4_v51eu")]
+position = Vector2(341, 382)
+scale = Vector2(0.266153, 0.248992)
+
+[node name="Fence6" parent="." instance=ExtResource("4_v51eu")]
+position = Vector2(304, -78.0001)
+scale = Vector2(0.270378, 0.274783)
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(-39, -96.9999)
 scale = Vector2(0.999999, 0.999999)
 tile_set = SubResource("TileSet_bdr8q")
 format = 2
-layer_0/tile_data = PackedInt32Array(1507341, 393216, 17, 1572877, 393216, 18, 1638413, 393216, 19, 1441806, 458752, 16, 1507342, 458752, 17, 1572878, 458752, 18, 1638414, 458752, 19, 1441807, 524288, 16, 1507343, 524288, 17, 1572879, 524288, 18, 1638415, 524288, 19, 1441808, 589824, 16, 1507344, 589824, 17, 1572880, 589824, 18, 1638416, 589824, 19, 589828, 1048576, 11, 655364, 1048576, 12, 720900, 1048576, 13, 786436, 1048576, 14, 589829, 1114112, 11, 655365, 1114112, 12, 720901, 1114112, 13, 786437, 1114112, 14, 589830, 1179648, 11, 655366, 1179648, 12, 720902, 1179648, 13, 786438, 1179648, 14, 589831, 1245184, 11, 655367, 1245184, 12, 720903, 1245184, 13, 786439, 1245184, 14, 3473433, 65536, 11, 3538969, 65536, 12, 3604505, 65536, 13, 3670041, 65536, 14, 3407898, 131072, 10, 3473434, 131072, 11, 3538970, 131072, 12, 3604506, 131072, 13, 3670042, 131072, 14, 3407899, 196608, 10, 3473435, 196608, 11, 3538971, 196608, 12, 3604507, 196608, 13, 3670043, 196608, 14, 3407900, 262144, 10, 3473436, 262144, 11, 3538972, 262144, 12, 3604508, 262144, 13, 3670044, 262144, 14, 3407901, 327680, 10, 3473437, 327680, 11, 3538973, 327680, 12, 3604509, 327680, 13, 3670045, 327680, 14, 327706, 1441792, 2, 393242, 1441792, 3, 458778, 1441792, 4, 327707, 1507328, 2, 393243, 1507328, 3, 458779, 1507328, 4, 327708, 1572864, 2, 393244, 1572864, 3, 458780, 1572864, 4, 327709, 1638400, 2, 393245, 1638400, 3, 458781, 1638400, 4, 2883603, 393216, 12, 2949139, 393216, 13, 3014675, 393216, 14, 2818068, 458752, 11, 2883604, 458752, 12, 2949140, 458752, 13, 3014676, 458752, 14, 2883605, 524288, 12, 2949141, 524288, 13, 3014677, 524288, 14, 2883606, 589824, 12, 2949142, 589824, 13, 3014678, 589824, 14, 1114136, 1376256, 12, 1179672, 1376256, 13, 1245208, 1376256, 14, 1114137, 1441792, 12, 1179673, 1441792, 13, 1245209, 1441792, 14, 1114138, 1507328, 12, 1179674, 1507328, 13, 1245210, 1507328, 14, 1114139, 1572864, 12, 1179675, 1572864, 13, 1245211, 1572864, 14, 720904, 1310720, 13, 786440, 1310720, 14)
+layer_0/tile_data = PackedInt32Array(1507341, 393216, 17, 1572877, 393216, 18, 1638413, 393216, 19, 1441806, 458752, 16, 1507342, 458752, 17, 1572878, 458752, 18, 1638414, 458752, 19, 1441807, 524288, 16, 1507343, 524288, 17, 1572879, 524288, 18, 1638415, 524288, 19, 1441808, 589824, 16, 1507344, 589824, 17, 1572880, 589824, 18, 1638416, 589824, 19, 589828, 1048576, 11, 655364, 1048576, 12, 720900, 1048576, 13, 786436, 1048576, 14, 589829, 1114112, 11, 655365, 1114112, 12, 720901, 1114112, 13, 786437, 1114112, 14, 589830, 1179648, 11, 655366, 1179648, 12, 720902, 1179648, 13, 786438, 1179648, 14, 589831, 1245184, 11, 655367, 1245184, 12, 720903, 1245184, 13, 786439, 1245184, 14, 3473433, 65536, 11, 3538969, 65536, 12, 3604505, 65536, 13, 3670041, 65536, 14, 3407898, 131072, 10, 3473434, 131072, 11, 3538970, 131072, 12, 3604506, 131072, 13, 3670042, 131072, 14, 3407899, 196608, 10, 3473435, 196608, 11, 3538971, 196608, 12, 3604507, 196608, 13, 3670043, 196608, 14, 3407900, 262144, 10, 3473436, 262144, 11, 3538972, 262144, 12, 3604508, 262144, 13, 3670044, 262144, 14, 3407901, 327680, 10, 3473437, 327680, 11, 3538973, 327680, 12, 3604509, 327680, 13, 3670045, 327680, 14, 327706, 1441792, 2, 393242, 1441792, 3, 458778, 1441792, 4, 327707, 1507328, 2, 393243, 1507328, 3, 458779, 1507328, 4, 327708, 1572864, 2, 393244, 1572864, 3, 458780, 1572864, 4, 327709, 1638400, 2, 393245, 1638400, 3, 458781, 1638400, 4, 2883603, 393216, 12, 2949139, 393216, 13, 3014675, 393216, 14, 2818068, 458752, 11, 2883604, 458752, 12, 2949140, 458752, 13, 3014676, 458752, 14, 2883605, 524288, 12, 2949141, 524288, 13, 3014677, 524288, 14, 2883606, 589824, 12, 2949142, 589824, 13, 3014678, 589824, 14, 1114136, 1376256, 12, 1179672, 1376256, 13, 1245208, 1376256, 14, 1114137, 1441792, 12, 1179673, 1441792, 13, 1245209, 1441792, 14, 1114138, 1507328, 12, 1179674, 1507328, 13, 1245210, 1507328, 14, 1114139, 1572864, 12, 1179675, 1572864, 13, 1245211, 1572864, 14, 720904, 1310720, 13, 786440, 1310720, 14, -720870, 1048576, 7, -655334, 1048576, 8, -589798, 1048576, 9, -524262, 1048576, 10, -786405, 1114112, 6, -720869, 1114112, 7, -655333, 1114112, 8, -589797, 1114112, 9, -524261, 1114112, 10, -786404, 1179648, 6, -720868, 1179648, 7, -655332, 1179648, 8, -589796, 1179648, 9, -524260, 1179648, 10, -786403, 1245184, 6, -720867, 1245184, 7, -655331, 1245184, 8, -589795, 1245184, 9, -524259, 1245184, 10, -655330, 1310720, 8, -589794, 1310720, 9, -524258, 1310720, 10, -720884, 393216, 12, -655348, 393216, 13, -589812, 393216, 14, -786419, 458752, 11, -720883, 458752, 12, -655347, 458752, 13, -589811, 458752, 14, -720882, 524288, 12, -655346, 524288, 13, -589810, 524288, 14, -720881, 589824, 12, -655345, 589824, 13, -589809, 589824, 14, -2097134, 1310720, 18, -2031598, 1310720, 19, -2162669, 1376256, 17, -2097133, 1376256, 18, -2031597, 1376256, 19, -1966061, 1376256, 20, -2228204, 1441792, 16, -2162668, 1441792, 17, -2097132, 1441792, 18, -2031596, 1441792, 19, -1966060, 1441792, 20, -2228203, 1507328, 16, -2162667, 1507328, 17, -2097131, 1507328, 18, -2031595, 1507328, 19, -1966059, 1507328, 20, -2228202, 1572864, 16, -2162666, 1572864, 17, -2097130, 1572864, 18, -2031594, 1572864, 19, -1966058, 1572864, 20, -2097129, 1638400, 18, -2031593, 1638400, 19, -1376237, 1376256, 3, -1310701, 1376256, 4, -1441772, 1441792, 2, -1376236, 1441792, 3, -1310700, 1441792, 4, -1245164, 1441792, 5, -1441771, 1507328, 2, -1376235, 1507328, 3, -1310699, 1507328, 4, -1245163, 1507328, 5, -1441770, 1572864, 2, -1376234, 1572864, 3, -1310698, 1572864, 4, -1245162, 1572864, 5, -1441769, 1638400, 2, -1376233, 1638400, 3, -1310697, 1638400, 4, -1245161, 1638400, 5, -3145723, 1376256, 3, -3080187, 1376256, 4, -3211258, 1441792, 2, -3145722, 1441792, 3, -3080186, 1441792, 4, -3014650, 1441792, 5, -3211257, 1507328, 2, -3145721, 1507328, 3, -3080185, 1507328, 4, -3014649, 1507328, 5, -3211256, 1572864, 2, -3145720, 1572864, 3, -3080184, 1572864, 4, -3014648, 1572864, 5, -3211255, 1638400, 2, -3145719, 1638400, 3, -3080183, 1638400, 4, -3014647, 1638400, 5, -2031612, 327680, 22, -1966076, 327680, 23, -1900540, 327680, 24, -2097147, 393216, 21, -2031611, 393216, 22, -1966075, 393216, 23, -1900539, 393216, 24, -2097146, 458752, 21, -2031610, 458752, 22, -1966074, 458752, 23, -1900538, 458752, 24, -1835002, 458752, 25, -2097145, 524288, 21, -2031609, 524288, 22, -1966073, 524288, 23, -1900537, 524288, 24, -1835001, 524288, 25, -2097144, 589824, 21, -2031608, 589824, 22, -1966072, 589824, 23, -1900536, 589824, 24, -2686950, 65536, 11, -2621414, 65536, 12, -2555878, 65536, 13, -2490342, 65536, 14, -2752485, 131072, 10, -2686949, 131072, 11, -2621413, 131072, 12, -2555877, 131072, 13, -2490341, 131072, 14, -2424805, 131072, 15, -2752484, 196608, 10, -2686948, 196608, 11, -2621412, 196608, 12, -2555876, 196608, 13, -2490340, 196608, 14, -2424804, 196608, 15, -2752483, 262144, 10, -2686947, 262144, 11, -2621411, 262144, 12, -2555875, 262144, 13, -2490339, 262144, 14, -2424803, 262144, 15, -2752482, 327680, 10, -2686946, 327680, 11, -2621410, 327680, 12, -2555874, 327680, 13, -2490338, 327680, 14, -2686964, 1310720, 27, -2621428, 1310720, 28, -2555892, 1310720, 29, -2752499, 1376256, 26, -2686963, 1376256, 27, -2621427, 1376256, 28, -2555891, 1376256, 29, -2752498, 1441792, 26, -2686962, 1441792, 27, -2621426, 1441792, 28, -2555890, 1441792, 29, -2752497, 1507328, 26, -2686961, 1507328, 27, -2621425, 1507328, 28, -2555889, 1507328, 29, -2686960, 1572864, 27, -2621424, 1572864, 28, -2555888, 1572864, 29)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(-43, 46)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(40, 275)
+position = Vector2(38, -104)
 shape = SubResource("RectangleShape2D_03irk")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(559, 311)
+position = Vector2(551, -135)
 shape = SubResource("RectangleShape2D_03irk")
 
 [node name="Fence" type="CollisionShape2D" parent="StaticBody2D"]
@@ -2943,15 +2969,140 @@ max_distance = 100.0
 position = Vector2(385, 336.75)
 shape = SubResource("RectangleShape2D_khscs")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="StaticBody2D/Fence2"]
-stream = ExtResource("6_j2f7c")
-volume_db = -21.0
-autoplay = true
-max_distance = 100.0
+[node name="Fence3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(347, -123)
+shape = SubResource("RectangleShape2D_khscs")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("6_7htlx")
-volume_db = -20.0
-autoplay = true
+[node name="Fence4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(347, -123)
+shape = SubResource("RectangleShape2D_khscs")
+
+[node name="Tree34" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(9, -461)
+scale = Vector2(1.22602, 1.14979)
+
+[node name="Tree35" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(37, -375)
+scale = Vector2(1.20582, 1.32851)
+
+[node name="Tree36" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(485, -321)
+scale = Vector2(1.19802, 1.32034)
+
+[node name="Tree37" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(-2, -290.026)
+scale = Vector2(1.18596, 1.35974)
+
+[node name="Tree38" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(514, -191)
+scale = Vector2(1.20297, 1.40741)
+
+[node name="Tree39" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(448, -875)
+scale = Vector2(1.19932, 1.15534)
+
+[node name="Tree40" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(-2, -550)
+scale = Vector2(1.21473, 1.26638)
+
+[node name="Tree41" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(535, -573)
+scale = Vector2(1.19968, 1.20136)
+
+[node name="Tree42" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(515, -432)
+scale = Vector2(1.2088, 1.1165)
+
+[node name="Tree43" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(492, -523)
+scale = Vector2(1.21412, 1.19407)
+
+[node name="Tree44" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(1, -812)
+scale = Vector2(1.21634, 1.14926)
+
+[node name="Tree45" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(20, -629)
+scale = Vector2(1.21782, 1.13038)
+
+[node name="Tree46" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(-4.76837e-07, -892)
+scale = Vector2(1.21264, 1.22979)
+
+[node name="Tree47" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(6, -721)
+scale = Vector2(1.21136, 1.09936)
+
+[node name="Tree48" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(500, -682)
+scale = Vector2(1.22498, 1.17271)
+
+[node name="Tree49" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(464, -785)
+scale = Vector2(1.20468, 1.14841)
+
+[node name="Tree50" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(9, -461)
+scale = Vector2(1.22602, 1.14979)
+
+[node name="Tree51" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(37, -375)
+scale = Vector2(1.20582, 1.32851)
+
+[node name="Tree52" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(485, -321)
+scale = Vector2(1.19802, 1.32034)
+
+[node name="Tree53" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(-2, -290.026)
+scale = Vector2(1.18596, 1.35974)
+
+[node name="Tree54" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(514, -191)
+scale = Vector2(1.20297, 1.40741)
+
+[node name="Tree55" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(448, -875)
+scale = Vector2(1.19932, 1.15534)
+
+[node name="Tree56" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(-2, -550)
+scale = Vector2(1.21473, 1.26638)
+
+[node name="Tree57" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(535, -573)
+scale = Vector2(1.19968, 1.20136)
+
+[node name="Tree58" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(515, -432)
+scale = Vector2(1.2088, 1.1165)
+
+[node name="Tree59" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(492, -523)
+scale = Vector2(1.21412, 1.19407)
+
+[node name="Tree60" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(1, -812)
+scale = Vector2(1.21634, 1.14926)
+
+[node name="Tree61" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(20, -629)
+scale = Vector2(1.21782, 1.13038)
+
+[node name="Tree62" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(-4.76837e-07, -892)
+scale = Vector2(1.21264, 1.22979)
+
+[node name="Tree63" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(6, -721)
+scale = Vector2(1.21136, 1.09936)
+
+[node name="Tree64" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(500, -682)
+scale = Vector2(1.22498, 1.17271)
+
+[node name="Tree65" parent="." instance=ExtResource("2_n43ry")]
+position = Vector2(464, -785)
+scale = Vector2(1.20468, 1.14841)
 
 [connection signal="input_event" from="CharacterBody2D" to="CharacterBody2D" method="_process"]
