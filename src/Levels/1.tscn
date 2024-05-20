@@ -1,12 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://be6l0uwhw2yle"]
+[gd_scene load_steps=10 format=3 uid="uid://6v76pffrd181"]
 
-[ext_resource type="Texture2D" uid="uid://cxgxvcpwoof5d" path="res://assets/green_groung.png" id="1_y36b5"]
-[ext_resource type="PackedScene" path="res://trees_scene.tscn" id="2_n43ry"]
-[ext_resource type="Texture2D" uid="uid://j7cqcqfq1x7g" path="res://assets/rocks.png" id="3_oxuro"]
-[ext_resource type="PackedScene" uid="uid://6j1pxagfg5xu" path="res://fence_scene.tscn" id="4_v51eu"]
+[ext_resource type="Texture2D" uid="uid://benmthjrqdq2l" path="res://assets/green_groung.png" id="1_y36b5"]
+[ext_resource type="PackedScene" uid="uid://btulqt1du2qtb" path="res://trees_scene.tscn" id="2_n43ry"]
+[ext_resource type="Texture2D" uid="uid://cd06vbcngf8c3" path="res://assets/rocks.png" id="3_oxuro"]
+[ext_resource type="PackedScene" uid="uid://6cl3g4egnea7" path="res://fence_scene.tscn" id="4_v51eu"]
 [ext_resource type="PackedScene" uid="uid://43px8l1gsqr6" path="res://scenes/main_character.tscn" id="5_xqwo6"]
-[ext_resource type="AudioStream" uid="uid://cl6ys4reuujoj" path="res://adventure-time-209699.mp3" id="6_7htlx"]
-[ext_resource type="AudioStream" uid="uid://do8fkid735at4" path="res://punch-1-166694.mp3" id="6_j2f7c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_me4h1"]
 texture = ExtResource("3_oxuro")
@@ -2958,12 +2956,6 @@ shape = SubResource("RectangleShape2D_03irk")
 [node name="Fence" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(166, 589.5)
 shape = SubResource("RectangleShape2D_khscs")
-
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="StaticBody2D/Fence"]
-stream = ExtResource("6_j2f7c")
-volume_db = -20.0
-autoplay = true
-max_distance = 100.0
 
 [node name="Fence2" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(385, 336.75)

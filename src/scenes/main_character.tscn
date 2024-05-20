@@ -1,7 +1,7 @@
 [gd_scene load_steps=20 format=3 uid="uid://43px8l1gsqr6"]
 
 [ext_resource type="Script" path="res://scenes/main_character.gd" id="1_ta707"]
-[ext_resource type="Texture2D" uid="uid://75n1uk2vhle3" path="res://assets/character_w_flame.png" id="2_o8fqp"]
+[ext_resource type="Texture2D" uid="uid://c8xk57nnp2v16" path="res://assets/character_w_flame.png" id="2_o8fqp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tk0ce"]
 atlas = ExtResource("2_o8fqp")
@@ -116,8 +116,8 @@ animations = [{
 "speed": 2.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o3bdj"]
-radius = 16.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rkyea"]
+radius = 13.0
 height = 50.0
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
@@ -136,5 +136,5 @@ frame_progress = 0.0293875
 offset = Vector2(21, 21)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(248, 696)
-shape = SubResource("CapsuleShape2D_o3bdj")
+position = Vector2(247, 695)
+shape = SubResource("CapsuleShape2D_rkyea")
